@@ -101,16 +101,16 @@
   - Automatically detects Linux and headless server environments (`isHeadless()` / Linux OS).
   - Switches to dedicated headless server mode without attempting to launch macOS desktop windows.
 - **Production Docker Containerization**:
-  - Added multi-stage [`Dockerfile`](file:///Users/abinpramodb/Downloads/library/Dockerfile) powered by Eclipse Temurin JDK 21 Alpine.
+  - Added multi-stage `Dockerfile` powered by Eclipse Temurin JDK 21 Alpine.
   - Compiles source code, packages assets, and runs on a lightweight JRE runtime.
 - **Render Blueprint Configuration**:
-  - Added [`render.yaml`](file:///Users/abinpramodb/Downloads/library/render.yaml) for 1-click cloud service deployment on Render Free Tier.
+  - Added `render.yaml` for 1-click cloud service deployment on Render Free Tier.
   - Configured automated health checks against `/api/stats`.
 - **GitHub Version Control & Cloud Sync**:
   - Codebase tracked with Git and configured for cloud repository sync.
-  - Recompiled standalone [`LibraryManagementSystem.jar`](file:///Users/abinpramodb/Downloads/library/LibraryManagementSystem.jar) with cloud port support.
+  - Recompiled standalone `LibraryManagementSystem.jar` with cloud port support.
 - **Deployment Documentation**:
-  - Step-by-step cloud deployment instructions provided in [`RENDER_DEPLOYMENT.md`](file:///Users/abinpramodb/Downloads/library/RENDER_DEPLOYMENT.md).
+  - Step-by-step cloud deployment instructions provided in `RENDER_DEPLOYMENT.md`.
 
 ---
 

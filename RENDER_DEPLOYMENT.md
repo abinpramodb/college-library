@@ -7,9 +7,9 @@ This guide shows you how to deploy the **College Library Management System** to 
 ## 📋 What Was Prepared
 
 We've added everything Render needs:
-1. [`Dockerfile`](file:///Users/abinpramodb/Downloads/library/Dockerfile) — Multi-stage Eclipse Temurin JDK 21 build.
-2. [`render.yaml`](file:///Users/abinpramodb/Downloads/library/render.yaml) — Render configuration blueprint.
-3. [`Main.java`](file:///Users/abinpramodb/Downloads/library/java-lms/src/com/library/Main.java) — Updated to automatically read Render's dynamic `$PORT` and run in headless server mode.
+1. `Dockerfile` — Multi-stage Eclipse Temurin JDK 21 build.
+2. `render.yaml` — Render configuration blueprint.
+3. `Main.java` — Updated to automatically read Render's dynamic `$PORT` and run in headless server mode.
 
 ---
 
