@@ -1,0 +1,24 @@
+[Unit]
+Description=College Library Management System (Enterprise Java Application)
+After=network.target
+
+[Service]
+Type=simple
+User=libraryuser
+Group=libraryuser
+WorkingDirectory=/opt/college-library
+ExecStart=/usr/bin/java -XX:+UseG1GC -Xmx1024m -jar /opt/college-library/LibraryManagementSystem.jar 8080 --server
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=college-library
+
+# Security sandbox flags
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
