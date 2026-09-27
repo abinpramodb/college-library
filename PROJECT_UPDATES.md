@@ -92,22 +92,25 @@
 
 ---
 
-## 9. Render 24/7 Cloud Deployment Setup
+## 9. Backend Cloud Deployment & 24/7 Hosting (Render)
 
-- **`Dockerfile` added** — multi-stage Eclipse Temurin JDK 21 Alpine container build for cloud deployment.
-- **`render.yaml` added** — Render web service blueprint with health checks at `/api/stats`.
-- **Permanent 24/7 URL** — runs online without requiring the local Mac to stay open.
-- **GitHub Repository synced** — live code pushed to `https://github.com/abinpramodb/college-library` on branch `main`.
-- **Deployment guide** — step-by-step instructions documented in `RENDER_DEPLOYMENT.md`.
-
----
-
-## 10. Dynamic Port & Cloud Server Mode (Java Backend)
-
-- **`PORT` environment variable support** — `Main.java` automatically reads `$PORT` provided by cloud providers (e.g. Render, Railway, Heroku).
-- **Headless server detection** — automatically identifies headless Linux/container environments and runs in background server mode without attempting to launch desktop browser windows.
-- **CLI flag addition** — added `--port <number>` support to easily override port via command line.
-- **Standalone JAR rebuild** — recompiled and updated `LibraryManagementSystem.jar` with dynamic port and cloud features.
+- **Dynamic Port Binding**:
+  - `Main.java` updated to read the `PORT` environment variable (`System.getenv("PORT")`) and `--port <number>` CLI flag.
+  - Automatically binds to cloud-assigned ports (e.g. Render port `10000`) without manual reconfiguration.
+- **Headless Cloud Auto-Detection**:
+  - Automatically detects Linux and headless server environments (`isHeadless()` / Linux OS).
+  - Switches to dedicated headless server mode without attempting to launch macOS desktop windows.
+- **Production Docker Containerization**:
+  - Added multi-stage [`Dockerfile`](file:///Users/abinpramodb/Downloads/library/Dockerfile) powered by Eclipse Temurin JDK 21 Alpine.
+  - Compiles source code, packages assets, and runs on a lightweight JRE runtime.
+- **Render Blueprint Configuration**:
+  - Added [`render.yaml`](file:///Users/abinpramodb/Downloads/library/render.yaml) for 1-click cloud service deployment on Render Free Tier.
+  - Configured automated health checks against `/api/stats`.
+- **GitHub Repository & Cloud Sync**:
+  - Codebase tracked with Git and published to [https://github.com/abinpramodb/college-library](https://github.com/abinpramodb/college-library).
+  - Recompiled standalone [`LibraryManagementSystem.jar`](file:///Users/abinpramodb/Downloads/library/LibraryManagementSystem.jar) with cloud port support.
+- **Deployment Documentation**:
+  - Step-by-step cloud deployment instructions provided in [`RENDER_DEPLOYMENT.md`](file:///Users/abinpramodb/Downloads/library/RENDER_DEPLOYMENT.md).
 
 ---
 
