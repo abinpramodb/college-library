@@ -106,8 +106,8 @@
 - **Render Blueprint Configuration**:
   - Added [`render.yaml`](file:///Users/abinpramodb/Downloads/library/render.yaml) for 1-click cloud service deployment on Render Free Tier.
   - Configured automated health checks against `/api/stats`.
-- **GitHub Repository & Cloud Sync**:
-  - Codebase tracked with Git and published to [https://github.com/abinpramodb/college-library](https://github.com/abinpramodb/college-library).
+- **GitHub Version Control & Cloud Sync**:
+  - Codebase tracked with Git and configured for cloud repository sync.
   - Recompiled standalone [`LibraryManagementSystem.jar`](file:///Users/abinpramodb/Downloads/library/LibraryManagementSystem.jar) with cloud port support.
 - **Deployment Documentation**:
   - Step-by-step cloud deployment instructions provided in [`RENDER_DEPLOYMENT.md`](file:///Users/abinpramodb/Downloads/library/RENDER_DEPLOYMENT.md).

@@ -17,9 +17,9 @@ We've added everything Render needs:
 
 If you haven't already pushed this project to GitHub:
 
-1. Open your terminal:
+1. Open your terminal in the project directory:
    ```bash
-   cd /Users/abinpramodb/Downloads/library
+   cd /path/to/library
    ```
 
 2. Initialize and commit:
