@@ -1,29 +1,33 @@
-# CHAPTER: WEB APPLICATION USER MANUAL & OPERATING GUIDE
+# CHAPTER: WEBSITE USER MANUAL
+
+> **Live Website URL**: [https://college-library-zqd2.onrender.com/](https://college-library-zqd2.onrender.com/)  
+> **Deployment Platform**: Cloud-Hosted on Render (24/7 Global Availability)  
+> **System Nature**: 100% Online Web Application (Zero local software / No localhost)
 
 ---
 
-## 1. System Overview & Cloud Access
+## 1. Introduction
 
-The **College Library Management System** is a 24/7 cloud-hosted web application deployed on **Render**. It requires **zero installation** on client devices and can be accessed from any smartphone, laptop, tablet, or desktop computer with an internet browser.
+The **College Library Management System** is a live public cloud website hosted online at **`https://college-library-zqd2.onrender.com/`**. 
 
-### 1.1 How to Access the Website
-1. Open any web browser (Google Chrome, Safari, Mozilla Firefox, Microsoft Edge, Brave).
-2. Enter the live hosted web address:
+It runs on cloud servers 24 hours a day, 7 days a week. Users (students, faculty, and library staff) do not run anything locally on their computers — they simply open the website URL in any browser on any phone, tablet, or laptop.
+
+---
+
+## 2. How to Access the Website
+
+1. Open your web browser (Chrome, Safari, Firefox, Edge, etc.) on your mobile phone, laptop, or computer.
+2. Go to the website URL:
    ```text
    https://college-library-zqd2.onrender.com/
    ```
-3. The home page loads instantly with full secure **HTTPS / SSL encryption**.
-
-### 1.2 Client Device Requirements
-- **Hardware**: Any internet-enabled smartphone, tablet, laptop, or desktop computer.
-- **Software**: Any standard modern web browser.
-- **Client Prerequisites**: None. No Java runtime, plugins, or software downloads are required on the user's device.
+3. The website loads immediately with secure HTTPS encryption.
 
 ---
 
-## 2. Authentication & Unified Web Login
+## 3. Website Login
 
-The website features a **Single Unified Login Screen**. Users do not need to manually choose whether they are a Student or a Librarian — the system automatically identifies the role from the entered Library ID:
+The website features a single login box for all users. The system automatically detects whether you are a Student or a Librarian based on your ID.
 
 ```
 ┌────────────────────────────────────────────────────────┐
@@ -36,112 +40,78 @@ The website features a **Single Unified Login Screen**. Users do not need to man
 └────────────────────────────────────────────────────────┘
 ```
 
-### Demonstration Accounts & Credentials:
+### Test Accounts:
 
-| Role | User ID / Username | Password | Web Portal Features |
+| User Type | Username / ID | Password | Access Rights |
 | :--- | :--- | :--- | :--- |
-| **Senior Librarian** | `LIB-001` | `password123` | Full administrative console, inventory, circulation & reports |
-| **Assistant Librarian**| `LIB-102` | `password123` | Circulation desk, book cataloguing & member search |
-| **Student (CS)** | `2026-CS-001` | `password123` | Online catalogue, active loans, renewals & digital card |
-| **Student (EC)** | `2026-EC-014` | `password123` | Online catalogue, active loans, renewals & digital card |
-| **Faculty Member** | `FAC-102` | `password123` | Extended borrowing quota (5 books) & 30-day loan duration |
+| **Student** | `2026-CS-001` | `password123` | Search books, view active loans, renew books, digital ID card |
+| **Student** | `2026-EC-014` | `password123` | Search books, view active loans, renew books, digital ID card |
+| **Faculty** | `FAC-102` | `password123` | Extended borrowing quota (5 books) & 30-day loan duration |
+| **Librarian** | `LIB-001` | `password123` | Full access to add/delete books, issue/return, and manage users |
 
 ---
 
-## 3. Student Web Portal Walkthrough
+## 4. Student User Guide
 
-When logging in with a Student ID, the web portal provides a self-service interface for all student library needs:
+When you log in with a Student ID, the website displays the **Student Portal**:
 
-### 3.1 Online Book Search (Catalogue Tab)
-1. Click the **Catalogue** tab in the navigation bar.
-2. Enter any keyword into the live search bar (Book Title, Author, ISBN, or Subject).
-3. The catalog filters in real time without refreshing the page.
-4. **Visual Stock Indicators**:
-   - `✓ IN STOCK` (Green badge): Physical copies are available on the library shelf.
-   - `⚠️ ALL ISSUED` (Amber/Red badge): All copies are currently checked out by other members.
-   - **Stock Ratio Bar**: Visual green and navy bar showing the exact proportion of available vs. issued copies.
+### 4.1 Searching for Books Online
+- Click the **Catalogue** tab.
+- Type any book title, author name, category, or ISBN into the search bar.
+- The website filters the book list instantly as you type.
+- **Stock Status**:
+  - `✓ IN STOCK`: Copies are available in the library.
+  - `⚠️ ALL ISSUED`: All copies are currently borrowed.
 
-### 3.2 Managing Active Loans & Renewals (My Books Tab)
-1. Click **My Books** to view your active book checkouts.
-2. Check the **Issue Date**, **Due Date**, and **Days Remaining** for each borrowed book.
-3. **1-Click Loan Renewal**:
-   - Click the **"🔄 Renew"** button next to an eligible loan.
-   - If the book is not overdue and has no reservations, the due date is automatically extended by an additional 14 days.
+### 4.2 Viewing Your Borrowed Books & Due Dates
+- Click the **My Books** tab.
+- You will see the list of all books you have currently borrowed, along with their issue dates and return due dates.
 
-### 3.3 Digital Library ID Card & Scannable Barcode (Profile Tab)
-1. Click the **Profile** tab.
-2. The page generates your **Official Digital Library ID Card**:
-   - Displays Student Name, Roll Number, Branch, and Validity.
-   - Renders a **high-resolution scannable barcode**.
-3. **At the Physical Counter**: Present your phone screen to the librarian; the barcode can be scanned directly from your screen for rapid book checkout.
+### 4.3 Renewing a Book Online
+- Under **My Books**, click the **"🔄 Renew"** button next to any eligible book.
+- The website automatically extends your return due date by 14 days.
+
+### 4.4 Your Digital Library ID Card
+- Click the **Profile** tab.
+- The website displays your digital library card with your name, student ID, and a scannable barcode for quick identification.
 
 ---
 
-## 4. Librarian Administrative Console Walkthrough
+## 5. Librarian User Guide
 
-Logging in with a Librarian ID (`LIB-001`) opens the full administrative management dashboard.
+When you log in with a Librarian ID (`LIB-001`), the website opens the **Librarian Console**:
 
-### 4.1 Dashboard & Live Quick-Navigation
-- Displays 4 live statistical counters: **Book Titles**, **Physical Copies**, **Registered Students**, and **Staff**.
-- **1-Click Navigation**: Clicking on the stat cards immediately navigates to the respective inventory or member management module.
+### 5.1 Dashboard Overview
+- Live cards show total **Book Titles**, **Physical Copies**, **Students**, and **Librarians**.
+- Clicking any card takes you directly to that section of the website.
 
-### 4.2 Book Inventory Management (Inventory Tab)
-- **Live Search & Category Pills**: Filter books instantly using one-click filter pills (*All Books*, *In Stock Only*, *Issued*, *Computer Science*, *Electronics*, *Mechanical*).
-- **Adding a New Book Title**:
-  1. Click the green **"➕ Add New Book"** button.
-  2. Fill in Title, Author, ISBN, Category, Shelf Code, and Initial Copies.
-  3. Click **Save Book** to register the title in the live database.
-- **Physical Copy Accession Modal**:
-  1. Click **"View Copies →"** on any book card.
-  2. View individual copies with their unique barcodes (e.g. `LIB-001-001`, `LIB-001-002`) and shelf locations.
-  3. Click **"➕ Add Copy"** to accession new physical copies with auto-generated barcodes.
+### 5.2 Managing Book Inventory
+- Click the **Inventory** tab.
+- **Search & Filters**: Search by title or author, or use the quick filter pills (*In Stock*, *Issued*, *Computer Science*, *Electronics*, *Mechanical*).
+- **Add a Book**: Click **"➕ Add New Book"**, enter the book details (Title, Author, ISBN, Category, Shelf Code), and click **Save**.
+- **Delete a Book**: Click the **"🗑️ Delete"** button on any book card to remove it.
+- **Manage Physical Copies**: Click **"View Copies →"** on any book card to see all copy barcodes, or click **"➕ Add Copy"** to add new physical copies.
 
----
+### 5.3 Issuing & Returning Books Online (Circulation Desk)
+- Click the **Circulation** tab:
+  - **To Issue a Book**: Enter the Student ID and Book Copy Barcode, then click **Complete Checkout**.
+  - **To Return a Book**: Enter the Book Copy Barcode and click **Process Return**.
+  - **Overdue Fines**: If a book is returned late, the website automatically calculates the fine (₹2.00 per day) and records the payment (Cash, UPI, or Waived).
 
-## 5. Web Circulation Desk Operations
+### 5.4 Managing Users
+- Click the **Users** tab to view all registered students and staff.
+- Search any member by name, ID, or department with real-time text highlighting.
+- Click **"➕ Register Member"** to create a new student or librarian account.
 
-### 5.1 Issuing a Book to a Student
-1. Open the **Circulation** tab and select **Issue Book**.
-2. Enter or scan the **Student ID** (e.g. `2026-CS-001`).
-3. Enter or scan the **Copy Barcode** (e.g. `LIB-001-002`).
-4. Click **Complete Checkout**.
-5. **Automated Validation Rules**:
-   - Checks that the student has not exceeded the 3-book borrow limit.
-   - Checks that the student has no unpaid overdue fines.
-   - Verifies the requested copy is `AVAILABLE`.
-6. Upon approval, the status updates to `ISSUED`, and a 14-day checkout deadline is set.
-
-### 5.2 Returning a Book & Automated Fine Settlement
-1. Select **Return Book** at the circulation desk.
-2. Enter or scan the **Copy Barcode**.
-3. Click **Process Return**.
-4. **Automated Overdue Calculation**:
-   - If returned on time: The copy is marked `AVAILABLE` with ₹0 fine.
-   - If returned late: The system automatically computes the fine based on days overdue (e.g., ₹2.00 / day).
-   - The **Fine Settlement Dialog** allows the librarian to record payment via **Cash**, **UPI QR Code**, or apply an authorized **Waiver**.
-   - Upon confirmation, the fine is cleared, and the book is restored to the active catalogue.
+### 5.5 Downloading Reports
+- Click the **Reports** tab to view the complete history of all book checkouts and returns.
+- Click **"📥 Export CSV"** to download the official circulation report spreadsheet to your device.
 
 ---
 
-## 6. Reports, Audit Trail & Policy Configuration
+## 6. Summary
 
-### 6.1 Circulation Reports & CSV Export (Reports Tab)
-1. View a chronological audit log of all book checkouts, returns, renewals, and fine payments.
-2. Click **"📥 Export CSV"** to download an official spreadsheet report for college administration and NAAC/NBA accreditation inspections.
-
-### 6.2 Policy & Fine Rule Configuration (Rules Tab)
-Librarians can modify operational library parameters live on the website:
-- **Daily Overdue Fine Rate** (Default: ₹2.00 / day)
-- **Student Borrow Limit** (Default: 3 books)
-- **Standard Loan Periods** (14 days for students, 30 days for faculty)
-
----
-
-## 7. Web Troubleshooting & FAQs
-
-| Scenario | System Handling | User Action |
-| :--- | :--- | :--- |
-| **"Quota Exceeded" message** | Student already has 3 active loans. | Return a borrowed book before checking out a new one. |
-| **"Outstanding Fine" message** | Unpaid overdue penalty exists on account. | Settle fine at counter via Cash or UPI before borrowing. |
-| **Book shows "ALL ISSUED"** | All physical shelf copies are currently on loan. | Check return due dates or request staff to accession more copies. |
-| **Accessing on Smartphones** | Fully responsive web interface. | Open browser, visit URL, and log in directly without installing any app. |
+Because the library system is deployed as a cloud website on Render, it offers:
+- **Zero Installation**: Accessible instantly on any device with a browser.
+- **24/7 Availability**: The server is always running online.
+- **Cross-Platform**: Works identically on Android, iOS, Windows, Mac, and Linux.
