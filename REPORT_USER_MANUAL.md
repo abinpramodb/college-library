@@ -10,7 +10,7 @@ The **College Library Management System** is a 24/7 cloud-hosted web application
 1. Open any web browser (Google Chrome, Safari, Mozilla Firefox, Microsoft Edge, Brave).
 2. Enter the live hosted web address:
    ```text
-   https://college-library-system.onrender.com
+   https://college-library-zqd2.onrender.com/
    ```
 3. The home page loads instantly with full secure **HTTPS / SSL encryption**.
 
